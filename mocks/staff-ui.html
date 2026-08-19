@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=390, initial-scale=1" />
+  <title>EarPT staff mock</title>
+  <style>
+    :root {
+      --bg: #12110f;
+      --elev: #1c1a17;
+      --card: #231f1a;
+      --line: rgba(212,160,84,.28);
+      --gold: #d4a054;
+      --goldsoft: #f0d08a;
+      --cream: #f4ede4;
+      --mute: #9a9388;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: #070706;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color: var(--cream);
+    }
+    .phone {
+      width: 390px;
+      min-height: 844px;
+      margin: 24px auto;
+      background:
+        radial-gradient(ellipse 80% 40% at 50% 0%, rgba(212,160,84,.12), transparent 60%),
+        var(--bg);
+      padding: 18px 20px 28px;
+    }
+    .top { display: flex; align-items: center; gap: 12px; }
+    .x {
+      width: 36px; height: 36px; border-radius: 50%;
+      border: 1px solid var(--line); display: grid; place-items: center;
+      color: var(--mute); font-size: 16px;
+    }
+    .kicker { color: var(--gold); letter-spacing: .14em; font-size: 11px; font-weight: 700; }
+    .meta { color: var(--mute); font-size: 13px; margin-top: 2px; }
+    .chip {
+      margin-left: auto; background: var(--elev); color: var(--mute);
+      padding: 6px 10px; border-radius: 999px; font-size: 12px;
+    }
+    .hair { height: 2px; background: #2a241c; margin: 14px 0 18px; border-radius: 2px; overflow: hidden; }
+    .hair > i { display: block; width: 42%; height: 100%; background: var(--gold); }
+    h1 { font-family: "Iowan Old Style", Palatino, serif; font-size: 28px; font-weight: 650; margin: 0 0 6px; }
+    .sub { color: var(--mute); font-size: 14px; margin: 0 0 16px; }
+    .keyrow { display: flex; gap: 8px; align-items: center; margin-bottom: 16px; }
+    .am {
+      background: var(--gold); color: #12110f; font-weight: 700;
+      padding: 8px 12px; border-radius: 12px; font-size: 15px;
+    }
+    .amhint { color: var(--mute); font-size: 13px; }
+    .listen {
+      display: inline-flex; gap: 8px; align-items: center;
+      border: 1px solid rgba(212,160,84,.45); color: var(--gold);
+      padding: 8px 14px; border-radius: 999px; font-weight: 650; font-size: 14px;
+      background: var(--elev);
+    }
+    .staff-wrap {
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      padding: 18px 10px 14px 36px;
+      margin: 18px 0 14px;
+      position: relative;
+    }
+    .clef { position: absolute; left: 8px; top: 34px; color: var(--goldsoft); font-size: 52px; line-height: 1; font-family: serif; }
+    svg { display: block; width: 100%; height: 168px; }
+    .hint { color: var(--mute); font-size: 12px; text-align: center; margin: 0 0 16px; }
+    .row { display: flex; gap: 10px; }
+    .ghost, .gold {
+      flex: 1; text-align: center; padding: 13px 0; border-radius: 999px; font-weight: 650; font-size: 15px;
+    }
+    .ghost { background: var(--elev); border: 1px solid var(--line); }
+    .gold { background: var(--gold); color: #12110f; }
+  </style>
+</head>
+<body>
+  <div class="phone">
+    <div class="top">
+      <div class="x">×</div>
+      <div>
+        <div class="kicker">MELODI</div>
+        <div class="meta">4 av 13</div>
+      </div>
+      <div class="chip">A-moll</div>
+    </div>
+    <div class="hair"><i></i></div>
+    <h1>Sätt frasen.</h1>
+    <p class="sub">Fyra fjärdedelar. Dra en not upp eller ner.</p>
+    <div class="keyrow">
+      <div class="am">Am</div>
+      <div class="amhint">Givet. Tonerna bor här.</div>
+      <div class="listen">▶ Hör igen</div>
+    </div>
+    <div class="staff-wrap">
+      <div class="clef">𝄞</div>
+      <svg viewBox="0 0 300 168" xmlns="http://www.w3.org/2000/svg">
+        <g stroke="#d4a054" stroke-opacity="0.35" stroke-width="1.2">
+          <line x1="8" y1="36" x2="292" y2="36"/>
+          <line x1="8" y1="52" x2="292" y2="52"/>
+          <line x1="8" y1="68" x2="292" y2="68"/>
+          <line x1="8" y1="84" x2="292" y2="84"/>
+          <line x1="8" y1="100" x2="292" y2="100"/>
+        </g>
+        <!-- columns -->
+        <g stroke="#d4a054" stroke-opacity="0.12" stroke-width="1" stroke-dasharray="3 5">
+          <line x1="52" y1="18" x2="52" y2="150"/>
+          <line x1="118" y1="18" x2="118" y2="150"/>
+          <line x1="184" y1="18" x2="184" y2="150"/>
+          <line x1="250" y1="18" x2="250" y2="150"/>
+        </g>
+        <!-- notes: A C E D  (a3 c4 e4 d4-ish on treble: A=100, C=84, E=68, D=76) -->
+        <g fill="#f0d08a">
+          <ellipse cx="52" cy="100" rx="11" ry="8"/>
+          <ellipse cx="118" cy="84" rx="11" ry="8"/>
+          <ellipse cx="184" cy="68" rx="11" ry="8"/>
+        </g>
+        <g fill="none" stroke="#d4a054" stroke-width="1.6">
+          <ellipse cx="250" cy="76" rx="11" ry="8"/>
+        </g>
+        <text x="52" y="148" text-anchor="middle" fill="#9a9388" font-size="11" font-family="system-ui">1</text>
+        <text x="118" y="148" text-anchor="middle" fill="#9a9388" font-size="11" font-family="system-ui">2</text>
+        <text x="184" y="148" text-anchor="middle" fill="#9a9388" font-size="11" font-family="system-ui">3</text>
+        <text x="250" y="148" text-anchor="middle" fill="#d4a054" font-size="11" font-family="system-ui">dra</text>
+        <!-- drag hint -->
+        <path d="M250 58 v-10 M250 48 l-3 4 M250 48 l3 4 M250 94 v10 M250 104 l-3 -4 M250 104 l3 -4" stroke="#d4a054" stroke-width="1.4" fill="none"/>
+      </svg>
+    </div>
+    <p class="hint">Tryck en kolumn för att sätta en not. Dra den till rätt linje.</p>
+    <div class="row">
+      <div class="ghost">Hör min draft</div>
+      <div class="gold">Svara</div>
+    </div>
+  </div>
+</body>
+</html>
