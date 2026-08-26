@@ -178,12 +178,21 @@ h1 {
   color: var(--gold-soft);
   margin: 0 0 28px;
 }
+.hero-visual {
+  margin: 0;
+}
 .hero-art {
   border-radius: 28px;
   overflow: hidden;
   border: 1px solid var(--line);
   min-height: 360px;
   background: #000 center/cover no-repeat;
+}
+.hero-caption {
+  margin: 8px 6px 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--mute);
 }
 .actions { display: flex; gap: 12px; flex-wrap: wrap; }
 .btn {
