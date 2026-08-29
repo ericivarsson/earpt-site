@@ -6,7 +6,22 @@
     <changefreq>weekly</changefreq>
   </url>
   <url>
-    <loc>https://earpt.com/en/</loc>
+    <loc>https://earpt.com/sv/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://earpt.com/de/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://earpt.com/es/</loc>
+    <lastmod>2026-08-29</lastmod>
+    <changefreq>weekly</changefreq>
+  </url>
+  <url>
+    <loc>https://earpt.com/fr/</loc>
     <lastmod>2026-08-29</lastmod>
     <changefreq>weekly</changefreq>
   </url>
