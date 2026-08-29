@@ -319,3 +319,6 @@ footer a:hover { color: var(--gold-soft); }
 .faq details { background: var(--bg-card); border: 1px solid var(--line); border-radius: 16px; padding: 2px 18px; }
 .faq summary { cursor: pointer; font-family: var(--serif); font-size: 18px; padding: 14px 0; }
 .faq details p { color: var(--mute); margin: 0 0 14px; }
+
+.gym-visual { margin: 0 0 28px; }
+.gym-visual .hero-art { min-height: 380px; }
