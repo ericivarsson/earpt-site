@@ -310,3 +310,12 @@ footer a:hover { color: var(--gold-soft); }
   .nav { grid-template-columns: 1fr auto; }
   .nav-links { display: none; }
 }
+
+.card-photo { padding: 0 0 20px; overflow: hidden; }
+.card-art { min-height: 220px; background: #000 center/cover no-repeat; }
+.card-body { padding: 18px 22px 2px; }
+.coming { margin: 14px 0 0; }
+.faq { display: grid; gap: 10px; max-width: 720px; }
+.faq details { background: var(--bg-card); border: 1px solid var(--line); border-radius: 16px; padding: 2px 18px; }
+.faq summary { cursor: pointer; font-family: var(--serif); font-size: 18px; padding: 14px 0; }
+.faq details p { color: var(--mute); margin: 0 0 14px; }
