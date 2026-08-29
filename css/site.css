@@ -235,6 +235,14 @@ h1 {
 }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
+
+.shots { display:grid; grid-template-columns:repeat(3,1fr); gap:16px; }
+.shot { background:var(--bg-card); border:1px solid var(--line); border-radius:20px; overflow:hidden; }
+.shot img { width:100%; height:auto; display:block; background:#000; }
+.shot-body { padding:18px 22px 22px; }
+.shot-body h3 { margin:0 0 8px; font-size:22px; }
+.shot-body p { margin:0; color:var(--mute); }
+
 .card {
   background: var(--bg-card);
   border: 1px solid var(--line);
@@ -313,7 +321,7 @@ footer a { color: var(--mute); }
 footer a:hover { color: var(--gold-soft); }
 
 @media (max-width: 800px) {
-  .hero, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .hero, .grid-3, .grid-2, .shots { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; }
   .nav-links { gap: 12px; font-size: 13px; }
 }
