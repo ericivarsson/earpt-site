@@ -353,12 +353,17 @@
     return document.documentElement.getAttribute("data-page-lang") || "";
   }
 
-  function isSvHome(pathname) {
-    return pathname === "/" || pathname === "/index.html";
+  function homeFor(lang) {
+    if (lang === "en") return "/";
+    return "/" + lang + "/";
   }
 
-  function isEnHome(pathname) {
-    return pathname === "/en" || pathname === "/en/" || pathname === "/en/index.html";
+  function pathIsLangHome(pathname, lang) {
+    const home = homeFor(lang);
+    if (lang === "en") {
+      return pathname === "/" || pathname === "/index.html";
+    }
+    return pathname === home || pathname === "/" + lang || pathname === home + "index.html";
   }
 
   function currentLang() {
@@ -450,12 +455,8 @@
       window.earptLang = opt.getAttribute("data-lang-opt");
       localStorage.setItem("earpt-lang", window.earptLang);
       setOpen(false);
-      if (window.earptLang === "sv" && !isSvHome(location.pathname)) {
-        location.assign("/" + location.hash);
-        return;
-      }
-      if (window.earptLang === "en" && !isEnHome(location.pathname)) {
-        location.assign("/en/" + location.hash);
+      if (!pathIsLangHome(location.pathname, window.earptLang)) {
+        location.assign(homeFor(window.earptLang) + location.hash);
         return;
       }
       apply(window.earptLang);
@@ -472,9 +473,12 @@
 
   const storedLang = localStorage.getItem("earpt-lang");
   const htmlPageLang = pageLang();
-  if ((storedLang === "sv" || storedLang === "en") && htmlPageLang && storedLang !== htmlPageLang) {
-    const dest = storedLang === "sv" ? "/" : "/en/";
-    location.replace(dest + location.hash);
+  if (
+    ["en", "sv", "de", "es", "fr"].includes(storedLang) &&
+    htmlPageLang &&
+    storedLang !== htmlPageLang
+  ) {
+    location.replace(homeFor(storedLang) + location.hash);
     return;
   }
   window.earptLang = currentLang();
