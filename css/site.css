@@ -323,9 +323,18 @@ footer a { color: var(--mute); }
 footer a:hover { color: var(--gold-soft); }
 
 @media (max-width: 800px) {
-  .hero, .grid-3, .grid-2, .shots { grid-template-columns: 1fr; }
+  .hero, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; }
   .nav-links { gap: 12px; font-size: 13px; }
+  .shots {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    justify-items: stretch;
+  }
+  .shot { border-radius: 14px; }
+  .shot-body { padding: 10px 12px 12px; }
+  .shot-body h3 { font-size: 16px; margin: 0 0 4px; }
+  .shot-body p { font-size: 13px; line-height: 1.35; }
 }
 @media (max-width: 720px) {
   .nav-links a[href*="#"] { display: none; }
