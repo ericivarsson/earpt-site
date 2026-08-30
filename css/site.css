@@ -242,6 +242,8 @@ h1 {
 .shot-body { padding:18px 22px 22px; }
 .shot-body h3 { margin:0 0 8px; font-size:22px; }
 .shot-body p { margin:0; color:var(--mute); }
+.work-split { margin: 28px 0 14px; }
+.section > .work-split:first-of-type { margin-top: 4px; }
 
 .card {
   background: var(--bg-card);
