@@ -208,7 +208,17 @@ h1 {
   pointer-events: none;
   user-select: none;
 }
-.actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.actions { display: flex; gap: 14px; flex-wrap: wrap; align-items: center; }
+.store-badge {
+  display: inline-block;
+  line-height: 0;
+  flex-shrink: 0;
+}
+.store-badge img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
 .btn {
   display: inline-flex;
   align-items: center;
