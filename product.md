@@ -28,14 +28,11 @@ EarPT is built for working musicians and serious beginners who want a short dail
 
 A beginner can start on fifths and major versus minor. A player who already works is not sent back to octaves. The top of the gym includes sevenths, inversions, longer phrases, and altered dominants.
 
-## How it compares
+## Lineage
 
-There is no single best ear training app.
+EarPT uses functional ear training: intervals heard in a key, against a tonic, not in a vacuum. Musicians who know Functional Ear Trainer will recognize that method. EarPT starts there, then adds chords, melody dictation, and progressions in the same gym, as a short iPhone session on sampled piano or guitar.
 
-- **Functional Ear Trainer** is the classic for hearing intervals against a tonic. EarPT starts there, then adds chords, melody, and progressions in the same gym, on sampled piano or guitar, as an iPhone session.
-- **EarMaster** is a full theory suite, often used at a desk, often sold as a subscription. EarPT is iPhone and iPad, five-minute sessions, one-time unlock.
-- **Tenuto** and **Perfect Ear** are useful drill books with many exercise types. EarPT is one next session, adaptive floors, and a map of what you have cleared.
-- **ToneGym** adds a game layer and is typically a higher-priced subscription. EarPT is quieter, and you buy it once.
+EarPT does not publish a ranking of other ear training apps.
 
 ## Quotable summary
 

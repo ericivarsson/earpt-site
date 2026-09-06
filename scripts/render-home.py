@@ -7,7 +7,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 CSS_V = "21"
-JS_V = "21"
+JS_V = "22"
 APP_ID = "6805772784"
 STORE = f"https://apps.apple.com/app/id{APP_ID}"
 GA = """  <!-- Google tag (gtag.js) -->
@@ -156,7 +156,6 @@ def page(lang: str, d: dict) -> str:
       <div class="nav-links">
         <a href="#gym" data-i18n="navGym">{t(d, 'navGym')}</a>
         <a href="#app" data-i18n="navApp">{t(d, 'navApp')}</a>
-        <a href="#compare" data-i18n="navCompare">{t(d, 'navCompare')}</a>
         <a href="#faq" data-i18n="navFaq">{t(d, 'navFaq')}</a>
         <a href="/support.html" data-i18n="navSupport">{t(d, 'navSupport')}</a>
       </div>
@@ -291,50 +290,9 @@ def page(lang: str, d: dict) -> str:
 
       <section class="section" id="compare">
         <h2 data-i18n="compareTitle">{t(d, 'compareTitle')}</h2>
-        <p class="compare-intro" data-i18n="compareP">{t(d, 'compareP')}</p>
-        <div class="table-wrap">
-          <table class="compare">
-            <thead>
-              <tr>
-                <th data-i18n="colApp">{t(d, 'colApp')}</th>
-                <th data-i18n="colFor">{t(d, 'colFor')}</th>
-                <th data-i18n="colSound">{t(d, 'colSound')}</th>
-                <th data-i18n="colPay">{t(d, 'colPay')}</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" data-i18n="rowEarpt">{t(d, 'rowEarpt')}</th>
-                <td data-i18n="earptFor">{t(d, 'earptFor')}</td>
-                <td data-i18n="earptSound">{t(d, 'earptSound')}</td>
-                <td data-i18n="earptPay">{t(d, 'earptPay')}</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="rowFet">{t(d, 'rowFet')}</th>
-                <td data-i18n="fetFor">{t(d, 'fetFor')}</td>
-                <td data-i18n="fetSound">{t(d, 'fetSound')}</td>
-                <td data-i18n="fetPay">{t(d, 'fetPay')}</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="rowEm">{t(d, 'rowEm')}</th>
-                <td data-i18n="emFor">{t(d, 'emFor')}</td>
-                <td data-i18n="emSound">{t(d, 'emSound')}</td>
-                <td data-i18n="emPay">{t(d, 'emPay')}</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="rowTenuto">{t(d, 'rowTenuto')}</th>
-                <td data-i18n="tenFor">{t(d, 'tenFor')}</td>
-                <td data-i18n="tenSound">{t(d, 'tenSound')}</td>
-                <td data-i18n="tenPay">{t(d, 'tenPay')}</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="rowTone">{t(d, 'rowTone')}</th>
-                <td data-i18n="tgFor">{t(d, 'tgFor')}</td>
-                <td data-i18n="tgSound">{t(d, 'tgSound')}</td>
-                <td data-i18n="tgPay">{t(d, 'tgPay')}</td>
-              </tr>
-            </tbody>
-          </table>
+        <div class="prose-block">
+          <p data-i18n="compareP">{t(d, 'compareP')}</p>
+          <p data-i18n="compareP2">{t(d, 'compareP2')}</p>
         </div>
       </section>
 
