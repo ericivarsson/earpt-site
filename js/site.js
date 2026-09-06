@@ -55,7 +55,7 @@
       privacyTitle: "Privacy policy",
       termsTitle: "Terms of use",
       metaTitle: "EarPT — Ear training app for musicians",
-      ctaStore: "Ten sessions free. Then a one-time unlock — not a subscription.",
+      ctaStore: "Ten sessions free. Then a one-time unlock, not a subscription.",
       navFaq: "FAQ",
       faqKicker: "FAQ",
       faqTitle: "Ear training, short.",
@@ -149,7 +149,7 @@
       privacyTitle: "Integritetspolicy",
       termsTitle: "Användarvillkor",
       metaTitle: "EarPT — Gehörsträningsapp för musiker",
-      ctaStore: "Tio pass gratis. Sen ett engångsköp — inte abonnemang.",
+      ctaStore: "Tio pass gratis. Sen ett engångsköp, inte abonnemang.",
       navFaq: "Frågor",
       faqKicker: "Frågor",
       faqTitle: "Gehörsträning, kort.",
@@ -242,7 +242,7 @@
       privacyTitle: "Datenschutz",
       termsTitle: "Nutzungsbedingungen",
       metaTitle: "EarPT — Gehörbildungs-App für Musiker",
-      ctaStore: "Zehn Sessions frei. Dann ein einmaliger Kauf — kein Abo.",
+      ctaStore: "Zehn Sessions frei. Dann ein einmaliger Kauf, kein Abo.",
       navFaq: "Fragen",
       faqKicker: "Fragen",
       faqTitle: "Gehörbildung, kurz.",
@@ -335,7 +335,7 @@
       privacyTitle: "Política de privacidad",
       termsTitle: "Términos de uso",
       metaTitle: "EarPT — App de entrenamiento auditivo para músicos",
-      ctaStore: "Diez sesiones gratis. Luego una compra única — no es suscripción.",
+      ctaStore: "Diez sesiones gratis. Luego una compra única, no es suscripción.",
       navFaq: "Preguntas",
       faqKicker: "Preguntas",
       faqTitle: "Entrenamiento auditivo, corto.",
@@ -428,7 +428,7 @@
       privacyTitle: "Politique de confidentialité",
       termsTitle: "Conditions d’utilisation",
       metaTitle: "EarPT — App d’oreille musicale pour musiciens",
-      ctaStore: "Dix séances gratuites. Puis un achat unique — pas d’abonnement.",
+      ctaStore: "Dix séances gratuites. Puis un achat unique, pas d’abonnement.",
       navFaq: "FAQ",
       faqKicker: "FAQ",
       faqTitle: "Oreille musicale, court.",
@@ -607,4 +607,33 @@
 
   const year = document.querySelector("[data-year]");
   if (year) year.textContent = String(new Date().getFullYear());
+
+  function initHeroSlides() {
+    const root = document.querySelector(".hero-phone");
+    if (!root) return;
+    const slides = Array.from(root.querySelectorAll("img"));
+    if (slides.length < 2) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    let i = 0;
+    let timer = null;
+    function go(n) {
+      slides[i].classList.remove("is-active");
+      i = n % slides.length;
+      slides[i].classList.add("is-active");
+    }
+    function start() {
+      if (timer) return;
+      timer = setInterval(function () {
+        if (!document.hidden) go(i + 1);
+      }, 5000);
+    }
+    function stop() {
+      clearInterval(timer);
+      timer = null;
+    }
+    start();
+    root.addEventListener("pointerenter", stop);
+    root.addEventListener("pointerleave", start);
+  }
+  initHeroSlides();
 })();
