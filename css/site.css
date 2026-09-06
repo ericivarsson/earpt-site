@@ -224,7 +224,7 @@ h1 {
   right: 2%;
   bottom: -12%;
   z-index: 2;
-  width: min(210px, 44%);
+  width: min(240px, 50%);
   aspect-ratio: 800 / 1740;
   border-radius: 22px;
   overflow: hidden;
@@ -417,7 +417,7 @@ footer a:hover { color: var(--gold-soft); }
       rgba(18, 17, 15, 0.2);
   }
   .hero-phone {
-    width: min(172px, 40%);
+    width: min(196px, 46%);
     bottom: -10%;
     right: 6%;
   }
