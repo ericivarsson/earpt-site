@@ -5,6 +5,7 @@ Dark studio, quiet gym. Charcoal field, cream type, one gold for links and the w
 ## Do
 
 - Lead with a real session screenshot, never a generated phone on a bench.
+- Hero stage is a large rounded well (old splash geometry). Drop a real photo at `assets/feel-hero.jpg` and add class `has-photo` plus `style="background-image:url('/assets/feel-hero.jpg')"` on `.hero-stage`. Landscape, dark, barn or stage. No generated stand-ins.
 - One idea per block. If the hero said it, do not say it again in three cards.
 - Sentence-case navigation. Serif for titles (`New York` / Iowan / Palatino), system sans for body.
 - Tables for comparison. Definition lists for facts. Screenshots without card chrome.

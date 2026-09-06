@@ -6,8 +6,8 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CSS_V = "20"
-JS_V = "20"
+CSS_V = "21"
+JS_V = "21"
 APP_ID = "6805772784"
 STORE = f"https://apps.apple.com/app/id{APP_ID}"
 GA = """  <!-- Google tag (gtag.js) -->
@@ -154,6 +154,7 @@ def page(lang: str, d: dict) -> str:
     <nav class="nav">
       <a class="brand" href="{esc(brand)}"><img src="/assets/icon.jpg" alt="" /> EarPT</a>
       <div class="nav-links">
+        <a href="#gym" data-i18n="navGym">{t(d, 'navGym')}</a>
         <a href="#app" data-i18n="navApp">{t(d, 'navApp')}</a>
         <a href="#compare" data-i18n="navCompare">{t(d, 'navCompare')}</a>
         <a href="#faq" data-i18n="navFaq">{t(d, 'navFaq')}</a>
@@ -172,14 +173,34 @@ def page(lang: str, d: dict) -> str:
             <a class="store-badge" href="{STORE}">
               <img src="{esc(d['badge'])}" alt="{t(d, 'storeAlt')}" width="120" height="40" />
             </a>
-            <a class="text-link" href="#app" data-i18n="ctaWork">{t(d, 'ctaWork')}</a>
+            <a class="btn btn-ghost" href="#gym" data-i18n="ctaGym">{t(d, 'ctaGym')}</a>
           </div>
         </div>
-        <figure class="hero-shot">
-          <img src="/assets/hear-tones.jpg" width="800" height="1740" alt="{t(d, 'altHero')}" fetchpriority="high" />
-          <figcaption data-i18n="heroCap">{t(d, 'heroCap')}</figcaption>
+        <figure class="hero-visual">
+          <div class="hero-stage">
+            <img class="hero-phone" src="/assets/hear-tones.jpg" width="800" height="1740" alt="{t(d, 'altHero')}" fetchpriority="high" />
+          </div>
         </figure>
       </header>
+
+      <section class="section" id="gym">
+        <h2 data-i18n="todayTitle">{t(d, 'todayTitle')}</h2>
+        <p class="sub" data-i18n="todayLede">{t(d, 'todayLede')}</p>
+        <div class="grid-3">
+          <article class="card">
+            <h3 data-i18n="card1t">{t(d, 'card1t')}</h3>
+            <p data-i18n="card1p">{t(d, 'card1p')}</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="card2t">{t(d, 'card2t')}</h3>
+            <p data-i18n="card2p">{t(d, 'card2p')}</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="card3t">{t(d, 'card3t')}</h3>
+            <p data-i18n="card3p">{t(d, 'card3p')}</p>
+          </article>
+        </div>
+      </section>
 
       <section class="facts" aria-label="{t(d, 'footFacts')}">
         <dl>
@@ -205,42 +226,53 @@ def page(lang: str, d: dict) -> str:
       <section class="section" id="app">
         <h2 data-i18n="appTitle">{t(d, 'appTitle')}</h2>
         <p class="sub" data-i18n="appLede">{t(d, 'appLede')}</p>
-        <div class="gallery">
-          <figure class="featured">
-            <img src="/assets/gym-map.jpg" width="800" height="1738" alt="{t(d, 'altMap')}" loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="workMapt">{t(d, 'workMapt')}</h3>
-              <p data-i18n="workMapp">{t(d, 'workMapp')}</p>
-            </figcaption>
-          </figure>
-          <figure>
+        <p class="work-split" data-i18n="workSimple">{t(d, 'workSimple')}</p>
+        <div class="shots">
+          <article class="shot">
+            <img src="/assets/hear-tones.jpg" width="800" height="1740" alt="{t(d, 'altHero')}" loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="work1t">{t(d, 'work1t')}</h3>
+              <p data-i18n="work1p">{t(d, 'work1p')}</p>
+            </div>
+          </article>
+          <article class="shot">
             <img src="/assets/hear-chords.jpg" width="800" height="1740" alt="{t(d, 'altChords')}" loading="lazy" />
-            <figcaption>
+            <div class="shot-body">
               <h3 data-i18n="work2t">{t(d, 'work2t')}</h3>
               <p data-i18n="work2p">{t(d, 'work2p')}</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/place-phrase.jpg" width="800" height="1740" alt="{t(d, 'altStaff')}" loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="workStafft">{t(d, 'workStafft')}</h3>
-              <p data-i18n="workStaffp">{t(d, 'workStaffp')}</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/hear-melody.jpg" width="800" height="1740" alt="{t(d, 'altMelody')}" loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="work3t">{t(d, 'work3t')}</h3>
-              <p data-i18n="work3p">{t(d, 'work3p')}</p>
-            </figcaption>
-          </figure>
-          <figure>
+            </div>
+          </article>
+          <article class="shot">
             <img src="/assets/progress.jpg" width="800" height="1740" alt="{t(d, 'altProgress')}" loading="lazy" />
-            <figcaption>
+            <div class="shot-body">
               <h3 data-i18n="workProgt">{t(d, 'workProgt')}</h3>
               <p data-i18n="workProgp">{t(d, 'workProgp')}</p>
-            </figcaption>
-          </figure>
+            </div>
+          </article>
+        </div>
+        <p class="work-split" data-i18n="workReady">{t(d, 'workReady')}</p>
+        <div class="shots">
+          <article class="shot">
+            <img src="/assets/place-phrase.jpg" width="800" height="1740" alt="{t(d, 'altStaff')}" loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="workStafft">{t(d, 'workStafft')}</h3>
+              <p data-i18n="workStaffp">{t(d, 'workStaffp')}</p>
+            </div>
+          </article>
+          <article class="shot">
+            <img src="/assets/hear-melody.jpg" width="800" height="1740" alt="{t(d, 'altMelody')}" loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="work3t">{t(d, 'work3t')}</h3>
+              <p data-i18n="work3p">{t(d, 'work3p')}</p>
+            </div>
+          </article>
+          <article class="shot">
+            <img src="/assets/gym-map.jpg" width="800" height="1738" alt="{t(d, 'altMap')}" loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="workMapt">{t(d, 'workMapt')}</h3>
+              <p data-i18n="workMapp">{t(d, 'workMapp')}</p>
+            </div>
+          </article>
         </div>
       </section>
 

@@ -39,7 +39,7 @@
   <meta name="apple-itunes-app" content="app-id=6805772784" />
   <link rel="apple-touch-icon" href="/assets/icon.jpg" />
   <link rel="icon" href="/assets/icon.jpg" />
-  <link rel="stylesheet" href="/css/site.css?v=20" />
+  <link rel="stylesheet" href="/css/site.css?v=21" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -176,6 +176,7 @@
     <nav class="nav">
       <a class="brand" href="/"><img src="/assets/icon.jpg" alt="" /> EarPT</a>
       <div class="nav-links">
+        <a href="#gym" data-i18n="navGym">The gym</a>
         <a href="#app" data-i18n="navApp">The app</a>
         <a href="#compare" data-i18n="navCompare">Compare</a>
         <a href="#faq" data-i18n="navFaq">FAQ</a>
@@ -194,14 +195,34 @@
             <a class="store-badge" href="https://apps.apple.com/app/id6805772784">
               <img src="/assets/badges/app-store-en.svg" alt="Download on the App Store" width="120" height="40" />
             </a>
-            <a class="text-link" href="#app" data-i18n="ctaWork">See the app</a>
+            <a class="btn btn-ghost" href="#gym" data-i18n="ctaGym">How it meets you</a>
           </div>
         </div>
-        <figure class="hero-shot">
-          <img src="/assets/hear-tones.jpg" width="800" height="1740" alt="EarPT ear training app on iPhone: interval identification in C major." fetchpriority="high" />
-          <figcaption data-i18n="heroCap">Interval training in C major.</figcaption>
+        <figure class="hero-visual">
+          <div class="hero-stage">
+            <img class="hero-phone" src="/assets/hear-tones.jpg" width="800" height="1740" alt="EarPT ear training app on iPhone: interval identification in C major." fetchpriority="high" />
+          </div>
         </figure>
       </header>
+
+      <section class="section" id="gym">
+        <h2 data-i18n="todayTitle">EarPT picks you up where you are.</h2>
+        <p class="sub" data-i18n="todayLede">A short placement sets the floor. You stay in the room until it's clean, then the next one opens. Same gym from the first fifth to altered dominants.</p>
+        <div class="grid-3">
+          <article class="card">
+            <h3 data-i18n="card1t">A short level check</h3>
+            <p data-i18n="card1p">Placement finds your floor. A working player is not sent back to octaves. A beginner is not thrown at sevenths.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="card2t">Stay until it's clean</h3>
+            <p data-i18n="card2p">Each room is one focused session, about five minutes. You stay until the work is solid. Then the next room opens.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="card3t">Beginner through pro</h3>
+            <p data-i18n="card3p">Fifths and major versus minor at the bottom. Sevenths, longer phrases, and altered dominants at the top.</p>
+          </article>
+        </div>
+      </section>
 
       <section class="facts" aria-label="Product facts">
         <dl>
@@ -227,42 +248,53 @@
       <section class="section" id="app">
         <h2 data-i18n="appTitle">What's in the app</h2>
         <p class="sub" data-i18n="appLede">A gym of floors and rooms, not a menu of forty exercise types. You stay in a room until the work is clean. Then the next one opens.</p>
-        <div class="gallery">
-          <figure class="featured">
-            <img src="/assets/gym-map.jpg" width="800" height="1738" alt="EarPT gym map: floors and rooms. Green is cleared, gold is the current room." loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="workMapt">The gym map</h3>
-              <p data-i18n="workMapp">Floors and rooms. Green is cleared. Gold is where you are.</p>
-            </figcaption>
-          </figure>
-          <figure>
+        <p class="work-split" data-i18n="workSimple">Start simple</p>
+        <div class="shots">
+          <article class="shot">
+            <img src="/assets/hear-tones.jpg" width="800" height="1740" alt="EarPT ear training app on iPhone: interval identification in C major." loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="work1t">Hear tones</h3>
+              <p data-i18n="work1p">Intervals in a key. Two notes, you name the distance.</p>
+            </div>
+          </article>
+          <article class="shot">
             <img src="/assets/hear-chords.jpg" width="800" height="1740" alt="EarPT chord training: name the chord quality you heard." loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="work2t">Chords</h3>
+            <div class="shot-body">
+              <h3 data-i18n="work2t">Hear chords</h3>
               <p data-i18n="work2p">Quality and color: major, minor, sevenths, inversions. Name what you heard.</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/place-phrase.jpg" width="800" height="1740" alt="EarPT place-the-phrase session: hear a melody and put the notes on the staff." loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="workStafft">Melody on the staff</h3>
-              <p data-i18n="workStaffp">Hear a short phrase. Put the notes where they belong.</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/hear-melody.jpg" width="800" height="1740" alt="EarPT melody training: a phrase on the staff." loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="work3t">Hear a line</h3>
-              <p data-i18n="work3p">Melody dictation in a key, two to four notes, then longer.</p>
-            </figcaption>
-          </figure>
-          <figure>
+            </div>
+          </article>
+          <article class="shot">
             <img src="/assets/progress.jpg" width="800" height="1740" alt="EarPT progress: sessions cleared and the floor you are on." loading="lazy" />
-            <figcaption>
+            <div class="shot-body">
               <h3 data-i18n="workProgt">Your floor</h3>
               <p data-i18n="workProgp">Sessions you have cleared, and a graph of how the work is going.</p>
-            </figcaption>
-          </figure>
+            </div>
+          </article>
+        </div>
+        <p class="work-split" data-i18n="workReady">More advanced when the ear is ready</p>
+        <div class="shots">
+          <article class="shot">
+            <img src="/assets/place-phrase.jpg" width="800" height="1740" alt="EarPT place-the-phrase session: hear a melody and put the notes on the staff." loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="workStafft">Melody on the staff</h3>
+              <p data-i18n="workStaffp">Hear a short phrase. Put the notes where they belong.</p>
+            </div>
+          </article>
+          <article class="shot">
+            <img src="/assets/hear-melody.jpg" width="800" height="1740" alt="EarPT melody training: a phrase on the staff." loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="work3t">Hear melody</h3>
+              <p data-i18n="work3p">Melody dictation in a key, two to four notes, then longer.</p>
+            </div>
+          </article>
+          <article class="shot">
+            <img src="/assets/gym-map.jpg" width="800" height="1738" alt="EarPT gym map: floors and rooms. Green is cleared, gold is the current room." loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="workMapt">The map</h3>
+              <p data-i18n="workMapp">Floors and rooms. Green is cleared. Gold is where you are.</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -377,6 +409,6 @@
       </div>
     </footer>
   </div>
-  <script src="/js/site.js?v=20"></script>
+  <script src="/js/site.js?v=21"></script>
 </body>
 </html>

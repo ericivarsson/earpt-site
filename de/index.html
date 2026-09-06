@@ -39,7 +39,7 @@
   <meta name="apple-itunes-app" content="app-id=6805772784" />
   <link rel="apple-touch-icon" href="/assets/icon.jpg" />
   <link rel="icon" href="/assets/icon.jpg" />
-  <link rel="stylesheet" href="/css/site.css?v=20" />
+  <link rel="stylesheet" href="/css/site.css?v=21" />
   <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -176,6 +176,7 @@
     <nav class="nav">
       <a class="brand" href="/de/"><img src="/assets/icon.jpg" alt="" /> EarPT</a>
       <div class="nav-links">
+        <a href="#gym" data-i18n="navGym">Das Gym</a>
         <a href="#app" data-i18n="navApp">Die App</a>
         <a href="#compare" data-i18n="navCompare">Vergleich</a>
         <a href="#faq" data-i18n="navFaq">Fragen</a>
@@ -194,14 +195,34 @@
             <a class="store-badge" href="https://apps.apple.com/app/id6805772784">
               <img src="/assets/badges/app-store-de.svg" alt="Laden im App Store" width="120" height="40" />
             </a>
-            <a class="text-link" href="#app" data-i18n="ctaWork">Die App ansehen</a>
+            <a class="btn btn-ghost" href="#gym" data-i18n="ctaGym">So holt sie dich ab</a>
           </div>
         </div>
-        <figure class="hero-shot">
-          <img src="/assets/hear-tones.jpg" width="800" height="1740" alt="EarPT Gehörbildungs-App auf dem iPhone: Intervallbestimmung in C-Dur." fetchpriority="high" />
-          <figcaption data-i18n="heroCap">Intervalltraining in C-Dur.</figcaption>
+        <figure class="hero-visual">
+          <div class="hero-stage">
+            <img class="hero-phone" src="/assets/hear-tones.jpg" width="800" height="1740" alt="EarPT Gehörbildungs-App auf dem iPhone: Intervallbestimmung in C-Dur." fetchpriority="high" />
+          </div>
         </figure>
       </header>
+
+      <section class="section" id="gym">
+        <h2 data-i18n="todayTitle">EarPT holt dich dort ab, wo du bist.</h2>
+        <p class="sub" data-i18n="todayLede">Ein kurzer Einstufungstest setzt die Etage. Du bleibst im Raum, bis es sauber ist. Dann öffnet sich der nächste. Dasselbe Gym von der ersten Quinte bis zu alterierten Dominanten.</p>
+        <div class="grid-3">
+          <article class="card">
+            <h3 data-i18n="card1t">Ein kurzer Einstufungstest</h3>
+            <p data-i18n="card1p">Der Test findet deine Etage. Wer schon spielt, wird nicht zu Oktaven zurückgeschickt. Anfänger werden nicht in Septimen geworfen.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="card2t">Bleiben, bis es sauber ist</h3>
+            <p data-i18n="card2p">Jeder Raum ist eine fokussierte Session, etwa fünf Minuten. Du bleibst, bis die Arbeit sitzt. Dann öffnet sich der nächste Raum.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="card3t">Anfänger bis Profi</h3>
+            <p data-i18n="card3p">Quinten und Dur gegen Moll unten. Septimen, längere Phrasen und alterierte Dominanten oben.</p>
+          </article>
+        </div>
+      </section>
 
       <section class="facts" aria-label="Produktfakten">
         <dl>
@@ -227,42 +248,53 @@
       <section class="section" id="app">
         <h2 data-i18n="appTitle">Was in der App ist</h2>
         <p class="sub" data-i18n="appLede">Ein Gym aus Etagen und Räumen, kein Menü mit vierzig Übungstypen. Du bleibst im Raum, bis es sauber ist. Dann öffnet sich der nächste.</p>
-        <div class="gallery">
-          <figure class="featured">
-            <img src="/assets/gym-map.jpg" width="800" height="1738" alt="EarPT Gym-Karte: Etagen und Räume. Grün ist geschafft, Gold ist der aktuelle Raum." loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="workMapt">Die Gym-Karte</h3>
-              <p data-i18n="workMapp">Etagen und Räume. Grün ist geschafft. Gold ist, wo du bist.</p>
-            </figcaption>
-          </figure>
-          <figure>
+        <p class="work-split" data-i18n="workSimple">Einfach anfangen</p>
+        <div class="shots">
+          <article class="shot">
+            <img src="/assets/hear-tones.jpg" width="800" height="1740" alt="EarPT Gehörbildungs-App auf dem iPhone: Intervallbestimmung in C-Dur." loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="work1t">Töne hören</h3>
+              <p data-i18n="work1p">Intervalle in einer Tonart. Zwei Töne, du benennst den Abstand.</p>
+            </div>
+          </article>
+          <article class="shot">
             <img src="/assets/hear-chords.jpg" width="800" height="1740" alt="EarPT Akkordtraining: benenne die gehörte Akkordqualität." loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="work2t">Akkorde</h3>
+            <div class="shot-body">
+              <h3 data-i18n="work2t">Akkorde hören</h3>
               <p data-i18n="work2p">Qualität und Farbe: Dur, Moll, Septimen, Umkehrungen. Benenne, was du gehört hast.</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/place-phrase.jpg" width="800" height="1740" alt="EarPT: Melodie hören und Noten auf das System setzen." loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="workStafft">Melodie auf dem System</h3>
-              <p data-i18n="workStaffp">Hör eine kurze Phrase. Setze die Noten an ihren Platz.</p>
-            </figcaption>
-          </figure>
-          <figure>
-            <img src="/assets/hear-melody.jpg" width="800" height="1740" alt="EarPT Melodietraining: eine Phrase auf dem Notensystem." loading="lazy" />
-            <figcaption>
-              <h3 data-i18n="work3t">Eine Linie hören</h3>
-              <p data-i18n="work3p">Melodiediktat in einer Tonart, zwei bis vier Töne, dann länger.</p>
-            </figcaption>
-          </figure>
-          <figure>
+            </div>
+          </article>
+          <article class="shot">
             <img src="/assets/progress.jpg" width="800" height="1740" alt="EarPT Fortschritt: geschaffte Sessions und dein Floor." loading="lazy" />
-            <figcaption>
+            <div class="shot-body">
               <h3 data-i18n="workProgt">Dein Floor</h3>
               <p data-i18n="workProgp">Sessions, die du geschafft hast, und ein Graph, wie es läuft.</p>
-            </figcaption>
-          </figure>
+            </div>
+          </article>
+        </div>
+        <p class="work-split" data-i18n="workReady">Schwieriger, wenn das Ohr soweit ist</p>
+        <div class="shots">
+          <article class="shot">
+            <img src="/assets/place-phrase.jpg" width="800" height="1740" alt="EarPT: Melodie hören und Noten auf das System setzen." loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="workStafft">Melodie auf dem System</h3>
+              <p data-i18n="workStaffp">Hör eine kurze Phrase. Setze die Noten an ihren Platz.</p>
+            </div>
+          </article>
+          <article class="shot">
+            <img src="/assets/hear-melody.jpg" width="800" height="1740" alt="EarPT Melodietraining: eine Phrase auf dem Notensystem." loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="work3t">Melodien hören</h3>
+              <p data-i18n="work3p">Melodiediktat in einer Tonart, zwei bis vier Töne, dann länger.</p>
+            </div>
+          </article>
+          <article class="shot">
+            <img src="/assets/gym-map.jpg" width="800" height="1738" alt="EarPT Gym-Karte: Etagen und Räume. Grün ist geschafft, Gold ist der aktuelle Raum." loading="lazy" />
+            <div class="shot-body">
+              <h3 data-i18n="workMapt">Die Karte</h3>
+              <p data-i18n="workMapp">Etagen und Räume. Grün ist geschafft. Gold ist, wo du bist.</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -377,6 +409,6 @@
       </div>
     </footer>
   </div>
-  <script src="/js/site.js?v=20"></script>
+  <script src="/js/site.js?v=21"></script>
 </body>
 </html>
