@@ -147,7 +147,8 @@ main { display: block; }
   grid-template-columns: 1.1fr 0.9fr;
   gap: 48px;
   align-items: center;
-  padding: 36px 0 64px;
+  padding: 36px 0 96px;
+  overflow: visible;
 }
 .hero h1 {
   font-family: var(--serif);
@@ -168,51 +169,34 @@ main { display: block; }
   color: var(--cream);
   font-size: 16px;
 }
-.hero-visual { margin: 0; }
-.hero-stage {
+.hero-visual {
   position: relative;
-  border-radius: 28px;
-  overflow: hidden;
-  border: 1px solid var(--line);
-  min-height: 440px;
-  background:
-    radial-gradient(ellipse 90% 55% at 50% 110%, rgba(196, 146, 74, 0.22), transparent 58%),
-    linear-gradient(180deg, #2c261e 0%, #161410 62%);
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding: 32px 28px 0;
+  margin: 0;
+  min-height: 420px;
+  overflow: visible;
 }
-.hero-stage.has-photo {
-  background-color: #000;
+.hero-photo {
+  width: 100%;
+  aspect-ratio: 5 / 4;
   background-image: url("/assets/feel-hero.jpg");
   background-size: cover;
   background-position: 38% 35%;
-  justify-content: flex-end;
-  align-items: flex-end;
-  padding: 0 14px 0 0;
-}
-.hero-stage.has-photo::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(90deg, transparent 48%, rgba(18, 17, 15, 0.28) 100%);
-  pointer-events: none;
+  border: 0;
+  border-radius: 0;
+  -webkit-mask-image: radial-gradient(ellipse 86% 80% at 42% 40%, #000 36%, transparent 74%);
+  mask-image: radial-gradient(ellipse 86% 80% at 42% 40%, #000 36%, transparent 74%);
 }
 .hero-phone {
-  position: relative;
-  z-index: 1;
-  width: min(280px, 68%);
+  position: absolute;
+  right: 2%;
+  bottom: -14%;
+  z-index: 2;
+  width: min(176px, 38%);
   height: auto;
-  border-radius: 22px 22px 0 0;
-  border: 1px solid var(--line);
-  border-bottom: 0;
+  border-radius: 22px;
+  border: 1px solid rgba(244, 237, 228, 0.16);
   display: block;
-}
-.hero-stage.has-photo .hero-phone {
-  width: min(168px, 36%);
+  box-shadow: 0 16px 36px rgba(0, 0, 0, 0.45);
 }
 
 .sound-row {
@@ -501,10 +485,12 @@ footer a:hover { color: var(--gold-soft); }
 
 @media (max-width: 800px) {
   .hero, .grid-3, .grid-2, .sound-row { grid-template-columns: 1fr; }
-  .hero { padding-top: 16px; }
-  .hero-stage { min-height: 360px; }
-  .hero-phone { width: min(240px, 70%); }
-  .hero-stage.has-photo .hero-phone { width: min(150px, 34%); }
+  .hero { padding-top: 16px; padding-bottom: 80px; }
+  .hero-phone {
+    width: min(150px, 34%);
+    bottom: -10%;
+    right: 6%;
+  }
   .facts dl { grid-template-columns: 1fr; gap: 18px; }
   .nav-links { gap: 14px; font-size: 14px; }
   .shots {
