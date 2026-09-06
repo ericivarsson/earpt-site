@@ -187,9 +187,9 @@ main { display: block; }
   right: -8%;
   top: -6%;
   bottom: 4%;
-  background-image: url("/assets/feel-hero.jpg");
+  background-image: url("/assets/feel-hero.jpg?v=2");
   background-size: cover;
-  background-position: 22% 38%;
+  background-position: 24% 28%;
   pointer-events: none;
 }
 .hero-photo::after {
