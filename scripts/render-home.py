@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CSS_V = "25"
+CSS_V = "26"
 JS_V = "23"
 APP_ID = "6805772784"
 STORE = f"https://apps.apple.com/app/id{APP_ID}"
@@ -164,7 +164,8 @@ def page(lang: str, d: dict) -> str:
 
     <main id="main">
       <header class="hero">
-        <div>
+        <div class="hero-photo" role="img" aria-hidden="true"></div>
+        <div class="hero-copy">
           <h1 data-i18n="heroTitle">{t(d, 'heroTitle')}</h1>
           <p class="lede" data-i18n="heroLede">{t(d, 'heroLede')}</p>
           <p class="price" data-i18n="heroPrice">{t(d, 'heroPrice')}</p>
@@ -176,7 +177,6 @@ def page(lang: str, d: dict) -> str:
           </div>
         </div>
         <figure class="hero-visual">
-          <div class="hero-photo" role="img" aria-hidden="true"></div>
           <img class="hero-phone" src="/assets/hear-tones.jpg" width="800" height="1740" alt="{t(d, 'altHero')}" fetchpriority="high" />
         </figure>
       </header>

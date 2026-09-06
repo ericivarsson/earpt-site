@@ -143,9 +143,10 @@ img { max-width: 100%; display: block; }
 main { display: block; }
 
 .hero {
+  position: relative;
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 48px;
+  grid-template-columns: 1.05fr 0.95fr;
+  gap: 28px;
   align-items: center;
   padding: 36px 0 96px;
   overflow: visible;
@@ -169,27 +170,43 @@ main { display: block; }
   color: var(--cream);
   font-size: 16px;
 }
+.hero-copy,
 .hero-visual {
   position: relative;
+  z-index: 1;
+}
+.hero-visual {
   margin: 0;
   min-height: 420px;
   overflow: visible;
 }
 .hero-photo {
-  width: 100%;
-  aspect-ratio: 5 / 4;
+  position: absolute;
+  z-index: 0;
+  left: 8%;
+  right: -8%;
+  top: -6%;
+  bottom: 4%;
   background-image: url("/assets/feel-hero.jpg");
   background-size: cover;
-  background-position: 38% 35%;
-  border: 0;
-  border-radius: 0;
-  -webkit-mask-image: radial-gradient(ellipse 86% 80% at 42% 40%, #000 36%, transparent 74%);
-  mask-image: radial-gradient(ellipse 86% 80% at 42% 40%, #000 36%, transparent 74%);
+  background-position: 22% 38%;
+  pointer-events: none;
+}
+.hero-photo::after {
+  content: "";
+  position: absolute;
+  inset: -2%;
+  background:
+    linear-gradient(to right, var(--bg) 0%, rgba(18, 17, 15, 0.72) 14%, rgba(18, 17, 15, 0) 46%),
+    linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 24%),
+    linear-gradient(to bottom, var(--bg) 0%, rgba(18, 17, 15, 0) 32%),
+    linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 36%);
+  pointer-events: none;
 }
 .hero-phone {
   position: absolute;
   right: 2%;
-  bottom: -14%;
+  bottom: -12%;
   z-index: 2;
   width: min(176px, 38%);
   height: auto;
@@ -486,6 +503,19 @@ footer a:hover { color: var(--gold-soft); }
 @media (max-width: 800px) {
   .hero, .grid-3, .grid-2, .sound-row { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; padding-bottom: 80px; }
+  .hero-photo {
+    left: 0;
+    right: 0;
+    top: 42%;
+    bottom: -4%;
+  }
+  .hero-photo::after {
+    background:
+      linear-gradient(to bottom, var(--bg) 0%, rgba(18, 17, 15, 0) 28%),
+      linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 30%),
+      linear-gradient(to right, var(--bg) 0%, rgba(18, 17, 15, 0) 22%),
+      linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 22%);
+  }
   .hero-phone {
     width: min(150px, 34%);
     bottom: -10%;
