@@ -202,12 +202,12 @@ h1 {
   position: absolute;
   z-index: 0;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: min(780px, 92vh);
+  left: -6%;
+  right: -10%;
+  height: min(620px, 78vh);
   background-image: url("/assets/feel-hero.jpg?v=2");
   background-size: cover;
-  background-position: 28% 12%;
+  background-position: 28% 22%;
   pointer-events: none;
 }
 .hero-photo::after {
@@ -215,10 +215,10 @@ h1 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to bottom, var(--bg) 0%, rgba(18, 17, 15, 0.82) 7%, rgba(18, 17, 15, 0.32) 16%, rgba(18, 17, 15, 0) 30%),
+    linear-gradient(to bottom, var(--bg) 0%, var(--bg) 4%, rgba(18, 17, 15, 0.88) 12%, rgba(18, 17, 15, 0.4) 24%, rgba(18, 17, 15, 0) 42%),
     linear-gradient(to right, var(--bg) 0%, var(--bg) 14%, rgba(18, 17, 15, 0.86) 26%, rgba(18, 17, 15, 0.45) 40%, rgba(18, 17, 15, 0.16) 54%, rgba(18, 17, 15, 0) 70%),
     linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 16%),
-    linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 26%),
+    linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 24%),
     rgba(18, 17, 15, 0.14);
   pointer-events: none;
 }
@@ -406,9 +406,10 @@ footer a:hover { color: var(--gold-soft); }
   .hero, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; padding-bottom: 80px; }
   .hero-photo {
-    top: 0;
-    height: min(820px, 100vh);
-    background-position: 30% 18%;
+    left: -4%;
+    right: -4%;
+    height: min(560px, 70vh);
+    background-position: 30% 24%;
   }
   .hero-photo::after {
     background:
