@@ -91,7 +91,9 @@
       work1p: "Intervals in a key. Two notes, you name the distance.",
       workSimple: "Start simple",
       workReady: "More advanced when the ear is ready",
-      compareP2: "If you already know Functional Ear Trainer, the interval work will feel familiar. EarPT starts there, then keeps going in the same gym. We don't rank the rest of the category. Other apps do other jobs."
+      compareP2: "If you already know Functional Ear Trainer, the interval work will feel familiar. EarPT starts there, then keeps going in the same gym. We don't rank the rest of the category. Other apps do other jobs.",
+      feelAlt: "Playing guitar in a dim barn.",
+      feelCap: "A room, not a catalog."
     },
     sv: {
       badge: "/assets/badges/app-store-sv.svg",
@@ -184,7 +186,9 @@
       work1p: "Intervall i en tonart. Två toner, du namnger avståndet.",
       workSimple: "Börja enkelt",
       workReady: "Svårare när örat är redo",
-      compareP2: "Känner du redan Functional Ear Trainer kommer intervalljobbet att kännas bekant. EarPT börjar där, och fortsätter i samma gym. Vi rankar inte resten av fältet. Andra appar gör andra jobb."
+      compareP2: "Känner du redan Functional Ear Trainer kommer intervalljobbet att kännas bekant. EarPT börjar där, och fortsätter i samma gym. Vi rankar inte resten av fältet. Andra appar gör andra jobb.",
+      feelAlt: "Gitarr i en mörk lada.",
+      feelCap: "Ett rum, inte en katalog."
     },
     de: {
       badge: "/assets/badges/app-store-de.svg",
@@ -277,7 +281,9 @@
       work1p: "Intervalle in einer Tonart. Zwei Töne, du benennst den Abstand.",
       workSimple: "Einfach anfangen",
       workReady: "Schwieriger, wenn das Ohr soweit ist",
-      compareP2: "Wenn du Functional Ear Trainer schon kennst, kommt dir die Intervallarbeit bekannt vor. EarPT beginnt dort und geht im selben Gym weiter. Wir listen die anderen Apps nicht auf. Sie machen andere Jobs."
+      compareP2: "Wenn du Functional Ear Trainer schon kennst, kommt dir die Intervallarbeit bekannt vor. EarPT beginnt dort und geht im selben Gym weiter. Wir listen die anderen Apps nicht auf. Sie machen andere Jobs.",
+      feelAlt: "Gitarre in einer dunklen Scheune.",
+      feelCap: "Ein Raum, kein Katalog."
     },
     es: {
       badge: "/assets/badges/app-store-es.svg",
@@ -370,7 +376,9 @@
       work1p: "Intervalos en una tonalidad. Dos notas, nombras la distancia.",
       workSimple: "Empieza simple",
       workReady: "Más difícil cuando el oído está listo",
-      compareP2: "Si ya conoces Functional Ear Trainer, el trabajo de intervalos te resultará familiar. EarPT empieza ahí y sigue en el mismo gym. No clasificamos el resto. Otras apps hacen otros trabajos."
+      compareP2: "Si ya conoces Functional Ear Trainer, el trabajo de intervalos te resultará familiar. EarPT empieza ahí y sigue en el mismo gym. No clasificamos el resto. Otras apps hacen otros trabajos.",
+      feelAlt: "Tocando la guitarra en un granero oscuro.",
+      feelCap: "Una sala, no un catálogo."
     },
     fr: {
       badge: "/assets/badges/app-store-fr.svg",
@@ -463,7 +471,9 @@
       work1p: "Intervalles dans une tonalité. Deux notes, tu nommes la distance.",
       workSimple: "Commence simple",
       workReady: "Plus dur quand l’oreille est prête",
-      compareP2: "Si tu connais déjà Functional Ear Trainer, le travail d’intervalles te sera familier. EarPT commence là, puis continue dans le même gym. On ne classe pas les autres. Elles font d’autres métiers."
+      compareP2: "Si tu connais déjà Functional Ear Trainer, le travail d’intervalles te sera familier. EarPT commence là, puis continue dans le même gym. On ne classe pas les autres. Elles font d’autres métiers.",
+      feelAlt: "Guitare dans une grange sombre.",
+      feelCap: "Une pièce, pas un catalogue."
     }
   };
   function pageLang() {

@@ -187,12 +187,17 @@ main { display: block; }
 }
 .hero-stage.has-photo {
   background-color: #000;
+  background-image: url("/assets/feel-hero.jpg");
+  background-size: cover;
+  background-position: 32% 42%;
+  justify-content: flex-end;
+  padding: 28px 22px 0 0;
 }
 .hero-stage.has-photo::before {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(180deg, rgba(18, 17, 15, 0.15) 0%, rgba(18, 17, 15, 0.55) 100%);
+  background: linear-gradient(180deg, rgba(18, 17, 15, 0.08) 0%, rgba(18, 17, 15, 0.42) 100%);
   pointer-events: none;
 }
 .hero-phone {
@@ -204,6 +209,32 @@ main { display: block; }
   border: 1px solid var(--line);
   border-bottom: 0;
   display: block;
+}
+.hero-stage.has-photo .hero-phone {
+  width: min(236px, 54%);
+}
+
+.sound-row {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 40px;
+  align-items: center;
+}
+.sound-row .sub { margin-bottom: 0; }
+.feel {
+  margin: 0;
+}
+.feel img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  border: 1px solid var(--line);
+  display: block;
+}
+.feel figcaption {
+  margin-top: 10px;
+  font-size: 13px;
+  color: var(--mute);
 }
 
 .actions { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; }
@@ -468,10 +499,11 @@ footer a { color: var(--mute); }
 footer a:hover { color: var(--gold-soft); }
 
 @media (max-width: 800px) {
-  .hero, .grid-3, .grid-2 { grid-template-columns: 1fr; }
+  .hero, .grid-3, .grid-2, .sound-row { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; }
   .hero-stage { min-height: 360px; }
   .hero-phone { width: min(240px, 70%); }
+  .hero-stage.has-photo .hero-phone { width: min(220px, 48%); }
   .facts dl { grid-template-columns: 1fr; gap: 18px; }
   .nav-links { gap: 14px; font-size: 14px; }
   .shots {

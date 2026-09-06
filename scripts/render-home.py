@@ -6,8 +6,8 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CSS_V = "21"
-JS_V = "22"
+CSS_V = "23"
+JS_V = "23"
 APP_ID = "6805772784"
 STORE = f"https://apps.apple.com/app/id{APP_ID}"
 GA = """  <!-- Google tag (gtag.js) -->
@@ -176,7 +176,7 @@ def page(lang: str, d: dict) -> str:
           </div>
         </div>
         <figure class="hero-visual">
-          <div class="hero-stage">
+          <div class="hero-stage has-photo">
             <img class="hero-phone" src="/assets/hear-tones.jpg" width="800" height="1740" alt="{t(d, 'altHero')}" fetchpriority="high" />
           </div>
         </figure>
@@ -284,8 +284,16 @@ def page(lang: str, d: dict) -> str:
       </section>
 
       <section class="section" id="sound">
-        <h2 data-i18n="soundTitle">{t(d, 'soundTitle')}</h2>
-        <p class="sub" data-i18n="soundP">{t(d, 'soundP')}</p>
+        <div class="sound-row">
+          <div>
+            <h2 data-i18n="soundTitle">{t(d, 'soundTitle')}</h2>
+            <p class="sub" data-i18n="soundP">{t(d, 'soundP')}</p>
+          </div>
+          <figure class="feel">
+            <img src="/assets/feel-play.jpg" width="1400" height="1400" alt="{t(d, 'feelAlt')}" loading="lazy" />
+            <figcaption data-i18n="feelCap">{t(d, 'feelCap')}</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="section" id="compare">
