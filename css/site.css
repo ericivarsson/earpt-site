@@ -175,13 +175,22 @@ h1 {
   margin: 0 0 18px;
 }
 .lede {
+  position: relative;
+  isolation: isolate;
   font-size: 18px;
-  color: var(--mute);
+  color: #c5bdb2;
   max-width: 38em;
-  margin: 0 0 12px -10px;
-  padding: 12px 16px;
-  border-radius: 10px;
-  background: rgba(18, 17, 15, 0.48);
+  margin: 0 0 12px;
+  padding: 8px 6px;
+}
+.lede::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: -10px -22px;
+  background: radial-gradient(ellipse 72% 68% at 38% 50%, rgba(18, 17, 15, 0.72) 0%, rgba(18, 17, 15, 0.42) 46%, rgba(18, 17, 15, 0) 78%);
+  filter: blur(14px);
+  pointer-events: none;
 }
 .offer {
   margin: 0 0 24px;
