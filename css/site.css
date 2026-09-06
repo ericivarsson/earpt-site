@@ -16,6 +16,7 @@
 * { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
+  position: relative;
   margin: 0;
   background: var(--bg);
   color: var(--cream);
@@ -29,7 +30,7 @@ body::before {
   inset: 0;
   pointer-events: none;
   background: radial-gradient(ellipse 80% 50% at 50% -10%, rgba(212, 160, 84, 0.12), transparent 60%);
-  z-index: 0;
+  z-index: 1;
 }
 a { color: var(--gold-soft); text-decoration: none; }
 a:hover { color: var(--gold); }
@@ -37,12 +38,14 @@ img { max-width: 100%; display: block; }
 
 .wrap {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   width: min(1080px, calc(100% - 40px));
   margin: 0 auto;
 }
 
 .nav {
+  position: relative;
+  z-index: 3;
   display: grid;
   grid-template-columns: auto minmax(0, 1fr) auto;
   align-items: center;
@@ -198,25 +201,24 @@ h1 {
 .hero-photo {
   position: absolute;
   z-index: 0;
-  left: 8%;
-  right: -8%;
-  top: -6%;
-  bottom: 4%;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: min(780px, 92vh);
   background-image: url("/assets/feel-hero.jpg?v=2");
   background-size: cover;
-  background-position: 24% 28%;
+  background-position: 28% 12%;
   pointer-events: none;
 }
 .hero-photo::after {
   content: "";
   position: absolute;
-  inset: -2%;
+  inset: 0;
   background:
-    linear-gradient(to right, var(--bg) 0%, var(--bg) 18%, rgba(18, 17, 15, 0.88) 32%, rgba(18, 17, 15, 0.45) 48%, rgba(18, 17, 15, 0.18) 62%, rgba(18, 17, 15, 0) 78%),
-    linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 22%),
-    linear-gradient(to bottom, var(--bg) 0%, rgba(18, 17, 15, 0) 28%),
-    linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 32%),
-    rgba(18, 17, 15, 0.22);
+    linear-gradient(to right, var(--bg) 0%, var(--bg) 10%, rgba(18, 17, 15, 0.82) 24%, rgba(18, 17, 15, 0.4) 40%, rgba(18, 17, 15, 0.12) 56%, rgba(18, 17, 15, 0) 72%),
+    linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 18%),
+    linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 30%),
+    rgba(18, 17, 15, 0.12);
   pointer-events: none;
 }
 .hero-phone {
@@ -403,18 +405,17 @@ footer a:hover { color: var(--gold-soft); }
   .hero, .grid-3, .grid-2 { grid-template-columns: 1fr; }
   .hero { padding-top: 16px; padding-bottom: 80px; }
   .hero-photo {
-    left: 0;
-    right: 0;
-    top: 42%;
-    bottom: -4%;
+    top: 0;
+    height: min(820px, 100vh);
+    background-position: 30% 18%;
   }
   .hero-photo::after {
     background:
-      linear-gradient(to bottom, var(--bg) 0%, rgba(18, 17, 15, 0.55) 18%, rgba(18, 17, 15, 0) 36%),
+      linear-gradient(to bottom, rgba(18, 17, 15, 0.35) 0%, rgba(18, 17, 15, 0) 22%),
       linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 28%),
-      linear-gradient(to right, var(--bg) 0%, rgba(18, 17, 15, 0) 20%),
-      linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 20%),
-      rgba(18, 17, 15, 0.2);
+      linear-gradient(to right, var(--bg) 0%, rgba(18, 17, 15, 0) 18%),
+      linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 18%),
+      rgba(18, 17, 15, 0.12);
   }
   .hero-phone {
     width: min(196px, 46%);
