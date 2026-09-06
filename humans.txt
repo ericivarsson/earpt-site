@@ -1,0 +1,13 @@
+/* TEAM */
+
+Site and app: EarPT
+Contact: support@earpt.com
+Location: Sweden
+
+/* SITE */
+
+Last update: 2026-09-06
+Standards: HTML, CSS, JSON-LD
+Language: English, Swedish, German, Spanish, French
+Doctype: HTML5
+IDE: whoever had the terminal open
