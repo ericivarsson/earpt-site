@@ -178,7 +178,10 @@ h1 {
   font-size: 18px;
   color: var(--mute);
   max-width: 38em;
-  margin: 0 0 12px;
+  margin: 0 0 12px -10px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: rgba(18, 17, 15, 0.48);
 }
 .offer {
   margin: 0 0 24px;
@@ -221,7 +224,7 @@ h1 {
     linear-gradient(to bottom, var(--bg) 0%, var(--bg) 4%, rgba(18, 17, 15, 0.88) 12%, rgba(18, 17, 15, 0.4) 24%, rgba(18, 17, 15, 0) 42%),
     linear-gradient(to right, var(--bg) 0%, var(--bg) 14%, rgba(18, 17, 15, 0.86) 26%, rgba(18, 17, 15, 0.45) 40%, rgba(18, 17, 15, 0.16) 54%, rgba(18, 17, 15, 0) 70%),
     linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 16%),
-    linear-gradient(to top, var(--bg) 0%, var(--bg) 3%, rgba(18, 17, 15, 0.7) 7%, rgba(18, 17, 15, 0) 14%),
+    linear-gradient(to top, var(--bg) 0%, var(--bg) 5%, rgba(18, 17, 15, 0.72) 12%, rgba(18, 17, 15, 0.28) 20%, rgba(18, 17, 15, 0) 30%),
     rgba(18, 17, 15, 0.2);
   pointer-events: none;
 }
@@ -407,7 +410,12 @@ footer a:hover { color: var(--gold-soft); }
 
 @media (max-width: 800px) {
   .hero, .grid-3, .grid-2 { grid-template-columns: 1fr; }
-  .hero { padding-top: 16px; padding-bottom: 80px; }
+  .hero { padding-top: 16px; padding-bottom: 40px; }
+  .hero-visual {
+    min-height: 0;
+    display: flex;
+    justify-content: center;
+  }
   .hero-photo {
     left: -4%;
     right: -4%;
@@ -421,9 +429,10 @@ footer a:hover { color: var(--gold-soft); }
       rgba(18, 17, 15, 0.48);
   }
   .hero-phone {
-    width: min(196px, 46%);
-    bottom: -16%;
-    right: 6%;
+    position: relative;
+    right: auto;
+    bottom: auto;
+    width: min(300px, 78%);
   }
   .nav-links { gap: 12px; font-size: 13px; }
   .shots {
