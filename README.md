@@ -4,6 +4,24 @@ Static marketing + support site for App Store: support, privacy, terms.
 
 No form. Support is `support@earpt.com` (point that address at your shared M365 mailbox).
 
+## Preview locally
+
+From this folder:
+
+```
+python3 -m http.server 8080
+```
+
+Open http://127.0.0.1:8080/
+
+Language homes are generated from `i18n.json`:
+
+```
+python3 scripts/render-home.py
+```
+
+Visual rules: `DESIGN.md`. Citation copy for search and answer engines: `product.md`, `llms.txt`.
+
 ## GitHub Pages + earpt.com
 
 GitHub Free can only serve Pages from a **public** repo. Keep the iOS app in a **private** repo. Publish this folder as its own public repo (for example `earpt-site`).

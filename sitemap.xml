@@ -1,43 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://earpt.com/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
+    <xhtml:link rel="alternate" hreflang="en" href="https://earpt.com/" />
+    <xhtml:link rel="alternate" hreflang="sv" href="https://earpt.com/sv/" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://earpt.com/de/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://earpt.com/es/" />
+    <xhtml:link rel="alternate" hreflang="fr" href="https://earpt.com/fr/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://earpt.com/" />
   </url>
   <url>
     <loc>https://earpt.com/sv/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://earpt.com/de/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://earpt.com/es/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
     <loc>https://earpt.com/fr/</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>weekly</changefreq>
   </url>
   <url>
+    <loc>https://earpt.com/product.md</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://earpt.com/llms.txt</loc>
+    <lastmod>2026-09-06</lastmod>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
     <loc>https://earpt.com/support.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-09-06</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://earpt.com/privacy.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
   <url>
     <loc>https://earpt.com/terms.html</loc>
-    <lastmod>2026-08-29</lastmod>
+    <lastmod>2026-08-18</lastmod>
     <changefreq>monthly</changefreq>
   </url>
 </urlset>
