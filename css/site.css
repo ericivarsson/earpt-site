@@ -215,10 +215,11 @@ h1 {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to right, var(--bg) 0%, var(--bg) 10%, rgba(18, 17, 15, 0.82) 24%, rgba(18, 17, 15, 0.4) 40%, rgba(18, 17, 15, 0.12) 56%, rgba(18, 17, 15, 0) 72%),
-    linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 18%),
-    linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 30%),
-    rgba(18, 17, 15, 0.12);
+    linear-gradient(to bottom, var(--bg) 0%, rgba(18, 17, 15, 0.82) 7%, rgba(18, 17, 15, 0.35) 16%, rgba(18, 17, 15, 0) 30%),
+    linear-gradient(to right, var(--bg) 0%, var(--bg) 16%, rgba(18, 17, 15, 0.9) 30%, rgba(18, 17, 15, 0.5) 44%, rgba(18, 17, 15, 0.18) 58%, rgba(18, 17, 15, 0) 74%),
+    linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 16%),
+    linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 28%),
+    rgba(18, 17, 15, 0.16);
   pointer-events: none;
 }
 .hero-phone {
@@ -411,11 +412,11 @@ footer a:hover { color: var(--gold-soft); }
   }
   .hero-photo::after {
     background:
-      linear-gradient(to bottom, rgba(18, 17, 15, 0.35) 0%, rgba(18, 17, 15, 0) 22%),
+      linear-gradient(to bottom, var(--bg) 0%, rgba(18, 17, 15, 0.8) 8%, rgba(18, 17, 15, 0.25) 20%, rgba(18, 17, 15, 0) 32%),
       linear-gradient(to top, var(--bg) 0%, rgba(18, 17, 15, 0) 28%),
-      linear-gradient(to right, var(--bg) 0%, rgba(18, 17, 15, 0) 18%),
-      linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 18%),
-      rgba(18, 17, 15, 0.12);
+      linear-gradient(to right, var(--bg) 0%, rgba(18, 17, 15, 0.55) 22%, rgba(18, 17, 15, 0) 48%),
+      linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 16%),
+      rgba(18, 17, 15, 0.16);
   }
   .hero-phone {
     width: min(196px, 46%);
