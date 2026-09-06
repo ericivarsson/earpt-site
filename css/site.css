@@ -208,7 +208,7 @@ main { display: block; }
   right: 2%;
   bottom: -12%;
   z-index: 2;
-  width: min(176px, 38%);
+  width: min(210px, 44%);
   height: auto;
   border-radius: 22px;
   border: 1px solid rgba(244, 237, 228, 0.16);
@@ -517,7 +517,7 @@ footer a:hover { color: var(--gold-soft); }
       linear-gradient(to left, var(--bg) 0%, rgba(18, 17, 15, 0) 22%);
   }
   .hero-phone {
-    width: min(150px, 34%);
+    width: min(172px, 40%);
     bottom: -10%;
     right: 6%;
   }

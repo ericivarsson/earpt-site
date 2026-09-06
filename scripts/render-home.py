@@ -6,7 +6,7 @@ import json
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-CSS_V = "27"
+CSS_V = "28"
 JS_V = "23"
 APP_ID = "6805772784"
 STORE = f"https://apps.apple.com/app/id{APP_ID}"
